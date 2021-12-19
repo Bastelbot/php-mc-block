@@ -1,0 +1,10 @@
+minecraft:lightning_rod
+minecraft:bell
+minecraft:white_bed
+minecraft:glow_lichen
+minecraft:campfire
+minecraft:glass_pane
+minecraft:lantern
+minecraft:infested_stone
+minecraft:lectern
+minecraft:white_wall_banner

@@ -1,0 +1,24 @@
+{
+  "name": "bastelbot/php-mc-block",
+  "type": "library",
+  "description": "",
+  "keywords": ["block"],
+  "homepage": "https://github.com/Bastelbot/php-mc-block",
+  "authors": [
+      {
+          "name": "Robert Böser",
+          "email": "code@bastelbot.de",
+          "homepage": "https://github.com/Bastelbot",
+          "role": "Developer"
+      }
+  ],
+  "require": {
+      "php": ">=7.4.0",
+      "bastelbot/php-mc-nbt": ">=1.0.1"
+  },
+  "autoload": {
+      "psr-4": {
+          "Bastelbot\\McBlock\\": "src"
+      }
+  }
+}
