@@ -1,16 +1,17 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\BlockGrey;
 
-class Water extends Block
+class Water extends BlockGrey
 {
-    protected $name = 'minecraft:water';
     protected $transparent = true;
 
     public function initTexture ()
     {
-        return $this->loadTexture('water_still');
+        $tex = $this->loadTexture('water_still');
+        $this->imagecolorize($tex, 0x000D7DED);
+        return $tex;
     }
 
     public function isWater ()

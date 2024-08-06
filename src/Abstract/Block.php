@@ -1,25 +1,26 @@
 <?php
 namespace Bastelbot\McBlock\Abstract;
 
+use Bastelbot\Common\CaseConverter;
+
 class Block
 {
     // ASSETS_PATH muss mit define angegeben werden!
     //const ASSETS_PATH = __DIR__ . '/../../../../assets';
     protected $data = 0;
-    protected $name = 'undefined';
+    protected $name = '';
     protected $transparent = true;
     protected $texture = null;
-/*
+
     function __construct()
     {
-        echo "Assets_Path: ".ASSETS_PATH."\n";
-
-        if(!defined(ASSETS_PATH)) {
-            echo "ASSETS_PATH ist nicht definiert!\n";
-            die;
+        if(!$this->name) {
+            $parts = explode('\\', static::class);
+            $snake = CaseConverter::pascalToSnake( end($parts) );
+            $this->name = "minecraft:$snake";
         }
     }
-*/
+
     public function setData ($data)
     {
         $this->data = $data;
@@ -62,16 +63,18 @@ class Block
 
     public function initTexture ()
     {
-        return $this->getEmptyImg();
+        $tex = $this->loadTexture();
+        if(!$tex) return $this->getEmptyImg();
+        return $tex;
     }
 
-    public function loadTexture ($file, $rot=0)
+    public function loadTexture ($file='', $rot=0)
     {
-        if(!$file) return false;
-        $path = ASSETS_PATH . '/minecraft/textures/block/' . $file . '.png';
+        $path = $this->findTexture($file);
+        if(!$path) return false;
         if(!is_file($path)) echo "########## FILE NOT FOUND: $path ##########\n";
         $im = imagecreatefrompng($path);
-        if(!$im)  return false;
+        if(!$im) return false;
 
         if($rot) {
             $rot *= 90;
@@ -89,6 +92,20 @@ class Block
     }
 
     // #########################################################################
+
+    protected function findTexture ($id='')
+    {
+        if(!$id) $id = $this->name;
+        $exid = explode(':', $id);
+        $id = end($exid);
+        $path = ASSETS_PATH . '/minecraft/textures/block/';
+        $mods = ['', '_top', '_front', '_side', '_on'];
+        foreach($mods as $mod) {
+            $test = "{$path}{$id}{$mod}.png";
+            if(is_file($test)) return $test;
+        }
+        return false;
+    }
 
     protected function cropButton (&$im)
     {

@@ -10,6 +10,7 @@ class OakWallSign extends Block
 
     public function initTexture ()
     {
-        return $this->loadTexture('../item/oak_sign');
+        return $this->getEmptyImg();
+        //return $this->loadTexture('../item/oak_sign');
     }
 }

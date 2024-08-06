@@ -1,5 +1,5 @@
 <?php
-namespace McBlock\Abstract;
+namespace Bastelbot\McBlock\Abstract;
 
 class BlockGrey extends Block
 {
@@ -43,7 +43,7 @@ class BlockGrey extends Block
         return $im;
     }
 
-    public function loadTexture ($file, $rot=0)
+    public function loadTexture ($file='', $rot=0)
     {
         $im = parent::loadTexture($file, $rot);
         return $this->toTrueColor($im, true);

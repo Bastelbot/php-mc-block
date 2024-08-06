@@ -1,7 +1,7 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\BlockGey;
+use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class PumpkinStem extends BlockGrey
 {

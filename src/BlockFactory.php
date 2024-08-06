@@ -44,7 +44,7 @@ class BlockFactory
                 return new $class();
             }
         }
-        Log::error("class $class not found. id: " . print_r($id, true));
+        Log::error("class $class not found. id: " . print_r($id, true), 1);
         return new BlockNotFound($id);
     }
 }

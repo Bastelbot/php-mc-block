@@ -3,7 +3,7 @@ namespace Bastelbot\McBlock\Minecraft;
 
 use Bastelbot\McBlock\Abstract\Block;
 
-class OakFence extends BlockFence
+class OakFence extends Block
 {
     protected $name = 'minecraft:oak_fence';
     protected $transparent = true;

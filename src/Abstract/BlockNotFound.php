@@ -1,5 +1,7 @@
 <?php
-namespace McBlock\Abstract;
+namespace Bastelbot\McBlock\Abstract;
+
+use Bastelbot\Common\Log;
 
 class BlockNotFound extends Block
 {

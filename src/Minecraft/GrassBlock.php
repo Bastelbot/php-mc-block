@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class GrassBlock extends BlockGrey
 {
-    protected $name = 'minecraft:grass_block';
     protected $transparent = false;
 
     public function initTexture ()

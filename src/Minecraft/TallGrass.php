@@ -1,7 +1,7 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class TallGrass extends BlockGrey
 {
