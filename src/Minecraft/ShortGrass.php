@@ -9,7 +9,7 @@ class ShortGrass extends BlockGrey
 
     public function initTexture ()
     {
-        $tex = $this->loadTexture('grass');
+        $tex = $this->loadTexture('short_grass');
         $this->imagecolorize($tex, 0x00ffff00);
         return $tex;
     }
