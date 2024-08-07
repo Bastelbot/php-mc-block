@@ -1,0 +1,18 @@
+{
+  "minecraft:sandstone_slab": "minecraft:sandstone",
+  "minecraft:sandstone_stairs": "minecraft:sandstone",
+  "minecraft:lime_carpet": "minecraft:lime_wool",
+  "minecraft:smooth_sandstone": "minecraft:sandstone",
+  "minecraft:smooth_sandstone_slab": "minecraft:sandstone",
+  "minecraft:smooth_sandstone_stairs": "minecraft:sandstone",
+  "minecraft:stone_brick_slab": "minecraft:stone_bricks",
+  "minecraft:stone_brick_stairs": "minecraft:stone_bricks",
+  "minecraft:stone_slab": "minecraft:stone",
+  "minecraft:spruce_slab": "minecraft:spruce_planks",
+  "minecraft:spruce_stairs": "minecraft:spruce_planks",
+  "minecraft:oak_slab": "minecraft:oak_planks",
+  "minecraft:oak_stairs": "minecraft:oak_planks",
+  "minecraft:jungle_slab": "minecraft:jungle_planks",
+  "minecraft:jungle_stairs": "minecraft:jungle_planks",
+  "minecraft:smooth_stone_slab": "minecraft:smooth_stone"
+}

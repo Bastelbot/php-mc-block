@@ -8,22 +8,31 @@ use Bastelbot\McBlock\Abstract\BlockNotFound;
 class BlockFactory
 {
     protected $blocks;
+    protected $replacements;
+    protected $use_block_data = false;
 
     public function __construct ()
     {
         $this->blocks = [];
+        $this->replacements = json_decode(file_get_contents(__DIR__.'/replacement_block_ids.json'), true);
     }
 
     public function getBlock ($id, $data)
     {
         //echo "BlockFac:getBlock: $id\n";
-        $hash = md5($id . json_encode($data));
+        $id = $this->getEffectiveId($id);
+        $hash = $this->use_block_data ? md5($id . json_encode($data)) : $id;
+        $data = $this->use_block_data ? $data : 0;
         if(empty($this->blocks[$hash])) {
             $block = $this->createBlock($id);
             $block->setData($data);
             $this->blocks[$hash] = $block;
         }
         return $this->blocks[$hash];
+    }
+
+    protected function getEffectiveId($id) {
+        return $this->replacements[$id] ?? $id;
     }
 
     protected function getBlockClassName ($id) {
