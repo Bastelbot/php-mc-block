@@ -1,6 +1,8 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
+use Bastelbot\McBlock\Abstract\BlockGrey;
+
 class ShortGrass extends BlockGrey
 {
     protected $transparent = true;
