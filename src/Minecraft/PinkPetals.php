@@ -3,7 +3,7 @@ namespace Bastelbot\McBlock\Minecraft;
 
 use Bastelbot\McBlock\Abstract\Block;
 
-class AcaciaPlanks extends Block
+class PinkPetals extends Block
 {
-    protected $transparent = false;
+    protected $transparent = true;
 }

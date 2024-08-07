@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class LilyPad extends BlockGrey
 {
-    protected $name = 'minecraft:lily_pad';
     protected $transparent = true;
 
     public function initTexture ()

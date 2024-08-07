@@ -3,12 +3,12 @@ namespace Bastelbot\McBlock\Minecraft;
 
 use Bastelbot\McBlock\Abstract\Block;
 
-class Peony extends Block
+class CherrySlab extends Block
 {
-    protected $transparent = true;
+    protected $transparent = false;
 
     public function initTexture ()
     {
-        return $this->loadTexture('peony_top');
+        return $this->loadTexture('cherry_planks');
     }
 }
