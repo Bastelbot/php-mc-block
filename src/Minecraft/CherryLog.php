@@ -3,10 +3,10 @@ namespace Bastelbot\McBlock\Minecraft;
 
 use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class AcaciaLog extends OpaqueBlock
+class CherryLog extends OpaqueBlock
 {
     public function initTexture ()
     {
-        return $this->loadTexture('acacia_log_top');
+        return $this->loadTexture('cherry_log_top');
     }
 }

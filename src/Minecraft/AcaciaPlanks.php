@@ -1,9 +1,9 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class AcaciaPlanks extends Block
+class AcaciaPlanks extends OpaqueBlock
 {
-    protected $transparent = false;
+
 }

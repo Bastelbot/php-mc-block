@@ -18,5 +18,22 @@
   "minecraft:acacia_wood": "minecraft:acacia_log",
   "minecraft:cut_sandstone": "minecraft:sandstone",
   "minecraft:chiseled_sandstone": "minecraft:sandstone",
-  "minecraft:mud_brick_slab": "minecraft:mud_bricks"
+  "minecraft:mud_brick_slab": "minecraft:mud_bricks",
+  "minecraft:acacia_wall_sign": "minecraft:oak_sign",
+  "minecraft:cherry_wall_sign": "minecraft:oak_sign",
+  "minecraft:bamboo_wall_sign": "minecraft:oak_sign",
+  "minecraft:quartz_slab": "minecraft:quartz_block",
+  "minecraft:mossy_stone_brick_slab": "minecraft:mossy_stone_bricks",
+  "minecraft:mossy_stone_brick_stairs": "minecraft:mossy_stone_bricks",
+  "minecraft:cut_red_sandstone_slab": "minecraft:red_sandstone",
+  "minecraft:polished_blackstone_brick_slab": "minecraft:polished_blackstone",
+  "minecraft:chiseled_polished_blackstone": "minecraft:polished_blackstone",
+  "minecraft:polished_blackstone_slab": "minecraft:polished_blackstone",
+  "minecraft:diorite_stairs": "minecraft:diorite",
+  "minecraft:bubble_coral_wall_fan": "minecraft:bubble_coral_fan",
+  "minecraft:brain_coral_wall_fan": "minecraft:brain_coral_fan",
+  "minecraft:fire_coral_wall_fan": "minecraft:fire_coral_fan",
+  "minecraft:horn_coral_wall_fan": "minecraft:horn_coral_fan",
+  "minecraft:tube_coral_wall_fan": "minecraft:tube_coral_fan",
+  "minecraft:grass": "minecraft:short_grass"
 }

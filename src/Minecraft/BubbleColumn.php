@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\Block;
 
 class BubbleColumn extends Block
 {
-    protected $name = 'minecraft:bubble_column';
     protected $transparent = true;
 
     public function initTexture ()
