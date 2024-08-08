@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\Block;
 
 class StrippedOakWood extends Block
 {
-    protected $name = 'minecraft:stripped_oak_wood';
     protected $transparent = false;
 
     public function initTexture ()

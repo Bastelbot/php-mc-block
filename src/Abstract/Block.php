@@ -12,8 +12,10 @@ class Block
     protected $transparent = true;
     protected $texture = null;
 
-    function __construct()
+    function __construct($name = '')
     {
+        if($name) $this->name = $name;
+
         if(!$this->name) {
             $parts = explode('\\', static::class);
             $snake = CaseConverter::pascalToSnake( end($parts) );

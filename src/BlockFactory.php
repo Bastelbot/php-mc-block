@@ -46,7 +46,7 @@ class BlockFactory
 
     protected function createBlock ($id)
     {
-        echo "new: $id\n";
+        //echo "new: $id\n";
         if($id) {
             $class = $this->getBlockClassName($id);
             if(class_exists($class)) {

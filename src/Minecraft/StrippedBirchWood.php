@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\Block;
 
 class StrippedBirchWood extends Block
 {
-    protected $name = 'minecraft:stripped_birch_wood';
     protected $transparent = false;
 
     public function initTexture ()

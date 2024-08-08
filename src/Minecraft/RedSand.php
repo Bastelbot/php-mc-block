@@ -3,7 +3,7 @@ namespace Bastelbot\McBlock\Minecraft;
 
 use Bastelbot\McBlock\Abstract\Block;
 
-class Dandelion extends Block
+class RedSand extends Block
 {
-    protected $transparent = true;
+    protected $transparent = false;
 }
