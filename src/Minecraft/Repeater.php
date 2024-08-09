@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class Repeater extends Block
+class Repeater extends OpaqueBlock
 {
-    protected $name = 'minecraft:repeater';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('repeater_on');

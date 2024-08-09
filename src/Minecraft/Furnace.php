@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class Furnace extends Block
+class Furnace extends OpaqueBlock
 {
-    protected $name = 'minecraft:furnace';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('furnace_front_on');

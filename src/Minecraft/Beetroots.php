@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class Beetroots extends Block
+class Beetroots extends TransparentBlock
 {
-    protected $name = 'minecraft:beetroots';
-    protected $transparent = true;
-
     public function initTexture ()
     {
         return $this->loadTexture('beetroots_stage3');

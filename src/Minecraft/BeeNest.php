@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class BeeNest extends Block
+class BeeNest extends OpaqueBlock
 {
-    protected $name = 'minecraft:bee_nest';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('bee_nest_front');

@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class JungleLog extends Block
+class JungleLog extends OpaqueBlock
 {
-    protected $name = 'minecraft:jungle_log';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('jungle_log_top');

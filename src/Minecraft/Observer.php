@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class Observer extends Block
+class Observer extends OpaqueBlock
 {
-    protected $name = 'minecraft:observer';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('observer_back_on');

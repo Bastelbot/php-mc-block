@@ -1,17 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Abstract;
 
-use Bastelbot\Common\Log;
-
 class BlockNotFound extends Block
 {
     protected $name = 'unknown';
     protected $transparent = false;
-
-    public function __construct ($id)
-    {
-        Log::error("Block $id nicht gefunden!");
-    }
 
     public function initTexture ()
     {

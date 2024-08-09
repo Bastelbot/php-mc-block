@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class LargeFern extends BlockGrey
 {
-    protected $name = 'minecraft:large_fern';
     protected $transparent = true;
 
     public function initTexture ()

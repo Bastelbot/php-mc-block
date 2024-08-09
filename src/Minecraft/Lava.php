@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class Lava extends Block
+class Lava extends OpaqueBlock
 {
-    protected $name = 'minecraft:lava';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('lava_still');

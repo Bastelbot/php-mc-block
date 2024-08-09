@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class Farmland extends Block
+class Farmland extends OpaqueBlock
 {
-    protected $name = 'minecraft:farmland';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('farmland_moist');

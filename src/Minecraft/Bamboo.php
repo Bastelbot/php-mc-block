@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class Bamboo extends Block
+class Bamboo extends OpaqueBlock
 {
-    protected $name = 'minecraft:bamboo';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('bamboo_stalk');

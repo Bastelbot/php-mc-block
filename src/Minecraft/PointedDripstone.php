@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class PointedDripstone extends Block
+class PointedDripstone extends TransparentBlock
 {
-    protected $name = 'minecraft:pointed_dripstone';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('pointed_dripstone_up_tip');

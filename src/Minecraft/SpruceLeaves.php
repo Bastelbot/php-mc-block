@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class SpruceLeaves extends BlockGrey
 {
-    protected $name = 'minecraft:spruce_leaves';
     protected $transparent = true;
 
     public function initTexture ()

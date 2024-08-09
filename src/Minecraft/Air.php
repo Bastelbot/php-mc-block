@@ -1,12 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class Air extends Block
+class Air extends TransparentBlock
 {
-    protected $transparent = true;
-
     public function initTexture ()
     {
         return $this->getEmptyImg();

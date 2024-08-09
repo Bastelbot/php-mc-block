@@ -1,12 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class Comparator extends Block
+class Comparator extends OpaqueBlock
 {
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('comparator_on');

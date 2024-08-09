@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class OakLog extends Block
+class OakLog extends OpaqueBlock
 {
-    protected $name = 'minecraft:oak_log';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('oak_log_top');

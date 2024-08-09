@@ -10,11 +10,13 @@ class BlockFactory
     protected $blocks;
     protected $replacements;
     protected $use_block_data = false;
+    protected $id_class_mapping = [];
 
     public function __construct ()
     {
         $this->blocks = [];
         $this->replacements = json_decode(file_get_contents(__DIR__.'/replacement_block_ids.json'), true);
+        $this->id_class_mapping = json_decode(file_get_contents(__DIR__.'/id_class_mapping.json'), true);
     }
 
     public function getBlock ($id, $data)
@@ -25,6 +27,7 @@ class BlockFactory
         $data = $this->use_block_data ? $data : 0;
         if(empty($this->blocks[$hash])) {
             $block = $this->createBlock($id);
+            $block->setName($id);
             $block->setData($data);
             $this->blocks[$hash] = $block;
         }
@@ -36,6 +39,9 @@ class BlockFactory
     }
 
     protected function getBlockClassName ($id) {
+        $cls = $this->id_class_mapping[$id] ?? null;
+        if($cls) return $cls;
+
         $cls = explode(':', $id);
         foreach($cls as $k => $v) {
             $cls[$k] = CaseConverter::snakeToPascal($v);
@@ -54,6 +60,6 @@ class BlockFactory
             }
         }
         Log::error("class $class not found. id: " . print_r($id, true), 1);
-        return new BlockNotFound($id);
+        return new BlockNotFound();
     }
 }

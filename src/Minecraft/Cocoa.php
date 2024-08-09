@@ -1,12 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class Cocoa extends Block
+class Cocoa extends TransparentBlock
 {
-    protected $transparent = true;
-
     public function initTexture ()
     {
         return $this->loadTexture('cocoa_stage2');

@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class Fire extends Block
+class Fire extends TransparentBlock
 {
-    protected $name = 'minecraft:fire';
-    protected $transparent = true;
-
     public function initTexture ()
     {
         return $this->loadTexture('fire_0');

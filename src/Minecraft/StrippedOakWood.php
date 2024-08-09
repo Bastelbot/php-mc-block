@@ -1,12 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class StrippedOakWood extends Block
+class StrippedOakWood extends OpaqueBlock
 {
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('stripped_oak_log_top');

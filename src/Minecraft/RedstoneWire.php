@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class RedstoneWire extends BlockGrey
 {
-    protected $name = 'minecraft:redstone_wire';
     protected $transparent = true;
 
     public function initTexture ()

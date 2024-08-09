@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class Sunflower extends Block
+class Sunflower extends TransparentBlock
 {
-    protected $name = 'minecraft:sunflower';
-    protected $transparent = true;
-
     public function initTexture ()
     {
         return $this->loadTexture('sunflower_front');

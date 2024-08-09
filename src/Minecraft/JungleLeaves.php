@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class JungleLeaves extends BlockGrey
 {
-    protected $name = 'minecraft:jungle_leaves';
     protected $transparent = true;
 
     public function initTexture ()

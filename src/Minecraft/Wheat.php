@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class Wheat extends Block
+class Wheat extends TransparentBlock
 {
-    protected $name = 'minecraft:wheat';
-    protected $transparent = true;
-
     public function initTexture ()
     {
         return $this->loadTexture('wheat_stage7');

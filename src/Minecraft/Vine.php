@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class Vine extends BlockGrey
 {
-    protected $name = 'minecraft:vine';
     protected $transparent = true;
 
     public function initTexture ()

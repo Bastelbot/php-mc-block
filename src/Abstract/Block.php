@@ -12,15 +12,17 @@ class Block
     protected $transparent = true;
     protected $texture = null;
 
-    function __construct($name = '')
+    function __construct()
     {
-        if($name) $this->name = $name;
-
         if(!$this->name) {
             $parts = explode('\\', static::class);
             $snake = CaseConverter::pascalToSnake( end($parts) );
             $this->name = "minecraft:$snake";
         }
+    }
+
+    public function setName($name) {    // call this before setData!!!
+        $this->name = $name;
     }
 
     public function setData ($data)

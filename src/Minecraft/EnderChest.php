@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class EnderChest extends Block
+class EnderChest extends TransparentBlock
 {
-    protected $name = 'minecraft:ender_chest';
-    protected $transparent = true;
-
     public function initTexture ()
     {
         $im = $this->loadTexture('../entity/chest/ender');

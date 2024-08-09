@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class Smoker extends Block
+class Smoker extends OpaqueBlock
 {
-    protected $name = 'minecraft:smoker';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('smoker_front');

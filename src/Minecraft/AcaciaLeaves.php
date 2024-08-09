@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class AcaciaLeaves extends BlockGrey
 {
-    protected $name = 'minecraft:acacia_leaves';
     protected $transparent = true;
 
     public function initTexture ()

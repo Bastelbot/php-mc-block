@@ -1,12 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class Dispenser extends Block
+class Dispenser extends OpaqueBlock
 {
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('dispenser_front');

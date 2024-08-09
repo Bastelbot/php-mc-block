@@ -1,12 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class CommandBlock extends Block
+class CommandBlock extends OpaqueBlock
 {
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('command_block_front');

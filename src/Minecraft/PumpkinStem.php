@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class PumpkinStem extends BlockGrey
 {
-    protected $name = 'minecraft:pumpkin_stem';
     protected $transparent = true;
 
     public function initTexture ()

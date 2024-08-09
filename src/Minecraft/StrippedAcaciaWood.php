@@ -1,12 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class StrippedAcaciaWood extends Block
+class StrippedAcaciaWood extends OpaqueBlock
 {
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('stripped_acacia_log_top');

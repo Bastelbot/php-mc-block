@@ -5,7 +5,6 @@ use Bastelbot\McBlock\Abstract\BlockGrey;
 
 class TallGrass extends BlockGrey
 {
-    protected $name = 'minecraft:tall_grass';
     protected $transparent = true;
 
     public function initTexture ()

@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class HayBlock extends Block
+class HayBlock extends OpaqueBlock
 {
-    protected $name = 'minecraft:hay_block';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('hay_block_side');

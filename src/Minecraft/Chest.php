@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class Chest extends Block
+class Chest extends TransparentBlock
 {
-    protected $name = 'minecraft:chest';
-    protected $transparent = true;
-
     public function initTexture ()
     {
         $im = $this->loadTexture('../entity/chest/normal');

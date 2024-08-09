@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class Hopper extends Block
+class Hopper extends OpaqueBlock
 {
-    protected $name = 'minecraft:hopper';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('hopper_inside');

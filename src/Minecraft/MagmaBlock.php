@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class MagmaBlock extends Block
+class MagmaBlock extends OpaqueBlock
 {
-    protected $name = 'minecraft:magma_block';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('magma');

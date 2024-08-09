@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\OpaqueBlock;
 
-class SpruceLog extends Block
+class SpruceLog extends OpaqueBlock
 {
-    protected $name = 'minecraft:spruce_log';
-    protected $transparent = false;
-
     public function initTexture ()
     {
         return $this->loadTexture('spruce_log_top');

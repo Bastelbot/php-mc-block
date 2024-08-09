@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class SmallDripleaf extends Block
+class SmallDripleaf extends TransparentBlock
 {
-    protected $name = 'minecraft:small_dripleaf';
-    protected $transparent = true;
-
     public function initTexture ()
     {
         return $this->loadTexture('big_dripleaf_top');

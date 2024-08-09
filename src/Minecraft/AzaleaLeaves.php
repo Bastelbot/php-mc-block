@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class AzaleaLeaves extends Block
+class AzaleaLeaves extends TransparentBlock
 {
-    protected $name = 'minecraft:azalea_leaves';
-    protected $transparent = true;
-
     public function initTexture ()
     {
         return $this->loadTexture('azalea_leaves');

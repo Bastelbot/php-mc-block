@@ -1,13 +1,10 @@
 <?php
 namespace Bastelbot\McBlock\Minecraft;
 
-use Bastelbot\McBlock\Abstract\Block;
+use Bastelbot\McBlock\Abstract\TransparentBlock;
 
-class Potatoes extends Block
+class Potatoes extends TransparentBlock
 {
-    protected $name = 'minecraft:potatoes';
-    protected $transparent = true;
-
     public function initTexture ()
     {
         return $this->loadTexture('potatoes_stage3');
