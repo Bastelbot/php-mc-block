@@ -32,6 +32,7 @@
   "minecraft:exposed_cut_copper_stairs": "minecraft:exposed_cut_copper",
   "minecraft:glass_pane": "minecraft:air",
   "minecraft:glow_lichen": "minecraft:air",
+  "minecraft:grindstone": "minecraft:air",
   "minecraft:infested_stone": "minecraft:stone",
   "minecraft:jungle_fence": "minecraft:jungle_planks",
   "minecraft:jungle_fence_gate": "minecraft:jungle_planks",

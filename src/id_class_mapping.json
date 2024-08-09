@@ -104,6 +104,7 @@
   "minecraft:lily_of_the_valley": "Bastelbot\\McBlock\\Abstract\\TransparentBlock",
   "minecraft:lime_wool": "Bastelbot\\McBlock\\Abstract\\OpaqueBlock",
   "minecraft:magenta_concrete": "Bastelbot\\McBlock\\Abstract\\OpaqueBlock",
+  "minecraft:mangrove_propagule": "Bastelbot\\McBlock\\Abstract\\TransparentBlock",
   "minecraft:mangrove_roots": "Bastelbot\\McBlock\\Abstract\\TransparentBlock",
   "minecraft:melon": "Bastelbot\\McBlock\\Abstract\\OpaqueBlock",
   "minecraft:moss_block": "Bastelbot\\McBlock\\Abstract\\OpaqueBlock",
